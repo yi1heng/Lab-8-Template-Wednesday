@@ -33,6 +33,17 @@ public class CityList {
         return list;
     }
 
+    public boolean hasEdmonton() {
+        for (City c : cities) {
+            if (c.getCityName().equals("Edmonton") &&
+                    c.getProvinceName().equals("Alberta")) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
     /**
      * This method checks to see if a city already exists in the list
      * @param city
